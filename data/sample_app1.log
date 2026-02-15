@@ -1,0 +1,184 @@
+2026-02-14 08:00:01 INFO WindowsUpdateClient Module initialized successfully
+2026-02-14 08:00:02 DEBUG WindowsUpdateClient Reading configuration from registry
+2026-02-14 08:00:03 INFO WindowsUpdateClient Connecting to Windows Update servers
+2026-02-14 08:01:10 INFO WindowsUpdateClient Connection established to update.microsoft.com
+2026-02-14 08:01:11 DEBUG WindowsUpdateClient Sending device metadata to update server
+2026-02-14 08:01:12 INFO WindowsUpdateClient Checking for available updates
+2026-02-14 08:01:45 INFO WindowsUpdateClient Found 3 pending updates
+2026-02-14 08:01:46 DEBUG WindowsUpdateClient Update KB5034441 marked as critical
+2026-02-14 08:01:47 DEBUG WindowsUpdateClient Update KB5034122 marked as optional
+2026-02-14 08:01:48 DEBUG WindowsUpdateClient Update KB5033375 marked as security
+2026-02-14 08:02:00 INFO WindowsUpdateClient Starting download for KB5034441
+2026-02-14 08:02:01 DEBUG WindowsUpdateClient Allocating 512 MB temporary disk space
+2026-02-14 08:02:02 DEBUG WindowsUpdateClient Verifying digital signature for KB5034441
+2026-02-14 08:03:15 INFO WindowsUpdateClient Download progress for KB5034441: 25%
+2026-02-14 08:04:30 INFO WindowsUpdateClient Download progress for KB5034441: 50%
+2026-02-14 08:05:45 INFO WindowsUpdateClient Download progress for KB5034441: 75%
+2026-02-14 08:06:58 INFO WindowsUpdateClient Download complete for KB5034441
+2026-02-14 08:07:00 INFO WindowsUpdateClient Starting download for KB5033375
+2026-02-14 08:07:01 DEBUG WindowsUpdateClient Verifying digital signature for KB5033375
+2026-02-14 08:08:22 INFO WindowsUpdateClient Download complete for KB5033375
+2026-02-14 08:08:30 WARNING WindowsUpdateClient Low disk space detected: 3.1 GB remaining
+2026-02-14 08:08:35 INFO WindowsUpdateClient Skipping optional update KB5034122 due to low disk space
+2026-02-14 08:08:40 INFO WindowsUpdateClient Beginning installation of KB5034441
+2026-02-14 08:08:41 DEBUG WindowsUpdateClient Creating system restore point before installation
+2026-02-14 08:09:00 INFO WindowsUpdateClient System restore point created successfully
+2026-02-14 08:09:01 DEBUG WindowsUpdateClient Unpacking update payload KB5034441
+2026-02-14 08:10:15 INFO WindowsUpdateClient Applying patches from KB5034441
+2026-02-14 08:11:30 INFO WindowsUpdateClient KB5034441 installation: 50% complete
+2026-02-14 08:12:45 INFO WindowsUpdateClient KB5034441 installation: 80% complete
+2026-02-14 08:13:10 INFO WindowsUpdateClient KB5034441 installed successfully
+2026-02-14 08:13:11 DEBUG WindowsUpdateClient Updating registry entries for KB5034441
+2026-02-14 08:13:12 INFO WindowsUpdateClient Beginning installation of KB5033375
+2026-02-14 08:14:00 INFO WindowsUpdateClient KB5033375 installed successfully
+2026-02-14 08:14:01 INFO WindowsUpdateClient All critical updates applied
+2026-02-14 08:14:02 DEBUG WindowsUpdateClient Cleaning up temporary installation files
+2026-02-14 08:14:30 INFO WindowsUpdateClient Temporary files removed
+2026-02-14 08:15:00 WARNING WindowsUpdateClient System restart required to complete updates
+2026-02-14 08:15:01 INFO WindowsUpdateClient Restart scheduled for 02:00 AM next cycle
+2026-02-14 08:15:05 INFO WindowsUpdateClient Update session completed successfully
+2026-02-14 09:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 09:00:01 DEBUG WindowsUpdateClient Checking update server availability
+2026-02-14 09:00:05 INFO WindowsUpdateClient Update server reachable
+2026-02-14 09:00:10 INFO WindowsUpdateClient No new updates available
+2026-02-14 09:00:11 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 10:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 10:00:01 ERROR WindowsUpdateClient Failed to reach update server: timeout after 30s
+2026-02-14 10:00:02 WARNING WindowsUpdateClient Retry 1 of 3 scheduled in 60 seconds
+2026-02-14 10:01:02 ERROR WindowsUpdateClient Retry 1 failed: connection refused
+2026-02-14 10:01:03 WARNING WindowsUpdateClient Retry 2 of 3 scheduled in 120 seconds
+2026-02-14 10:03:03 INFO WindowsUpdateClient Retry 2 succeeded: connection established
+2026-02-14 10:03:04 INFO WindowsUpdateClient No new updates available
+2026-02-14 10:03:05 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 11:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 11:00:03 INFO WindowsUpdateClient Checking for driver updates
+2026-02-14 11:00:08 INFO WindowsUpdateClient Driver update available for Intel HD Graphics
+2026-02-14 11:00:09 DEBUG WindowsUpdateClient Driver package size: 124 MB
+2026-02-14 11:00:15 INFO WindowsUpdateClient Downloading Intel HD Graphics driver update
+2026-02-14 11:01:30 INFO WindowsUpdateClient Driver download complete
+2026-02-14 11:01:31 DEBUG WindowsUpdateClient Verifying driver signature
+2026-02-14 11:01:33 INFO WindowsUpdateClient Driver signature valid
+2026-02-14 11:01:35 INFO WindowsUpdateClient Installing Intel HD Graphics driver
+2026-02-14 11:02:45 INFO WindowsUpdateClient Driver installation complete
+2026-02-14 11:02:46 WARNING WindowsUpdateClient Display adapter requires restart to activate new driver
+2026-02-14 12:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 12:00:04 INFO WindowsUpdateClient No new updates available
+2026-02-14 12:00:05 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 13:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 13:00:01 DEBUG WindowsUpdateClient Validating Windows activation status
+2026-02-14 13:00:02 INFO WindowsUpdateClient Windows activation status: active
+2026-02-14 13:00:06 INFO WindowsUpdateClient Checking for .NET Framework updates
+2026-02-14 13:00:10 INFO WindowsUpdateClient .NET Framework 4.8 is up to date
+2026-02-14 13:00:11 INFO WindowsUpdateClient No new updates available
+2026-02-14 13:00:12 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 14:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 14:00:05 ERROR WindowsUpdateClient Service disruption: BITS transfer failed with code 0x80244022
+2026-02-14 14:00:06 WARNING WindowsUpdateClient Background Intelligent Transfer Service error detected
+2026-02-14 14:00:07 DEBUG WindowsUpdateClient Attempting BITS service restart
+2026-02-14 14:00:20 INFO WindowsUpdateClient BITS service restarted successfully
+2026-02-14 14:00:25 INFO WindowsUpdateClient Retrying update check after BITS restart
+2026-02-14 14:00:30 INFO WindowsUpdateClient No new updates available
+2026-02-14 14:00:31 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 15:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 15:00:02 INFO WindowsUpdateClient Checking Microsoft Store app updates
+2026-02-14 15:00:05 INFO WindowsUpdateClient Found 2 Microsoft Store app updates
+2026-02-14 15:00:10 INFO WindowsUpdateClient Updating Microsoft Photos app
+2026-02-14 15:01:00 INFO WindowsUpdateClient Microsoft Photos updated successfully
+2026-02-14 15:01:05 INFO WindowsUpdateClient Updating Microsoft Calculator app
+2026-02-14 15:01:45 INFO WindowsUpdateClient Microsoft Calculator updated successfully
+2026-02-14 15:01:46 INFO WindowsUpdateClient All app updates applied
+2026-02-14 15:01:47 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 16:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 16:00:01 DEBUG WindowsUpdateClient Reading bandwidth throttle settings
+2026-02-14 16:00:02 DEBUG WindowsUpdateClient Throttle active: limiting to 30% of bandwidth during work hours
+2026-02-14 16:00:06 INFO WindowsUpdateClient No new updates available
+2026-02-14 16:00:07 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 17:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 17:00:04 WARNING WindowsUpdateClient Update history database inconsistency detected
+2026-02-14 17:00:05 DEBUG WindowsUpdateClient Running SFC scan on update components
+2026-02-14 17:01:00 INFO WindowsUpdateClient SFC scan completed: no issues found
+2026-02-14 17:01:05 INFO WindowsUpdateClient Update history repaired
+2026-02-14 17:01:06 INFO WindowsUpdateClient No new updates available
+2026-02-14 17:01:07 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 18:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 18:00:03 INFO WindowsUpdateClient No new updates available
+2026-02-14 18:00:04 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 19:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 19:00:02 DEBUG WindowsUpdateClient Checking pending reboot flag
+2026-02-14 19:00:03 WARNING WindowsUpdateClient Pending reboot detected from earlier updates
+2026-02-14 19:00:04 INFO WindowsUpdateClient Notifying user about pending restart
+2026-02-14 19:00:05 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 20:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 20:00:02 INFO WindowsUpdateClient No new updates available
+2026-02-14 20:00:03 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 21:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 21:00:01 ERROR WindowsUpdateClient Cryptographic service failure: certificate validation error
+2026-02-14 21:00:02 WARNING WindowsUpdateClient Attempting to reset Windows Update components
+2026-02-14 21:00:05 DEBUG WindowsUpdateClient Stopping wuauserv service
+2026-02-14 21:00:07 DEBUG WindowsUpdateClient Stopping cryptsvc service
+2026-02-14 21:00:09 DEBUG WindowsUpdateClient Renaming SoftwareDistribution folder
+2026-02-14 21:00:11 DEBUG WindowsUpdateClient Renaming catroot2 folder
+2026-02-14 21:00:13 DEBUG WindowsUpdateClient Restarting cryptsvc service
+2026-02-14 21:00:15 DEBUG WindowsUpdateClient Restarting wuauserv service
+2026-02-14 21:00:20 INFO WindowsUpdateClient Windows Update components reset successfully
+2026-02-14 21:00:25 INFO WindowsUpdateClient Retrying update check
+2026-02-14 21:00:30 INFO WindowsUpdateClient No new updates available
+2026-02-14 21:00:31 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 22:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 22:00:02 INFO WindowsUpdateClient No new updates available
+2026-02-14 22:00:03 INFO WindowsUpdateClient Scheduled check complete
+2026-02-14 23:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-14 23:00:02 INFO WindowsUpdateClient No new updates available
+2026-02-14 23:00:03 INFO WindowsUpdateClient Scheduled check complete
+2026-02-15 00:00:00 INFO WindowsUpdateClient Maintenance window check starting
+2026-02-15 00:00:01 DEBUG WindowsUpdateClient Maintenance window active: 00:00 - 04:00
+2026-02-15 00:00:02 INFO WindowsUpdateClient Downloading pending optional update KB5034122
+2026-02-15 00:01:15 INFO WindowsUpdateClient KB5034122 download complete
+2026-02-15 00:01:16 INFO WindowsUpdateClient Installing optional update KB5034122
+2026-02-15 00:02:30 INFO WindowsUpdateClient KB5034122 installed successfully
+2026-02-15 00:02:31 INFO WindowsUpdateClient Initiating system restart to apply all updates
+2026-02-15 00:02:35 DEBUG WindowsUpdateClient Saving update state to registry
+2026-02-15 00:02:36 INFO WindowsUpdateClient System restart in progress
+2026-02-15 02:00:00 INFO WindowsUpdateClient Post-restart initialization
+2026-02-15 02:00:02 INFO WindowsUpdateClient Verifying installed updates after restart
+2026-02-15 02:00:05 INFO WindowsUpdateClient KB5034441 verified: installed
+2026-02-15 02:00:06 INFO WindowsUpdateClient KB5033375 verified: installed
+2026-02-15 02:00:07 INFO WindowsUpdateClient KB5034122 verified: installed
+2026-02-15 02:00:08 INFO WindowsUpdateClient All updates verified successfully
+2026-02-15 02:00:09 DEBUG WindowsUpdateClient Clearing pending restart flag
+2026-02-15 02:00:10 INFO WindowsUpdateClient Update cycle fully complete
+2026-02-15 08:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-15 08:00:03 INFO WindowsUpdateClient No new updates available
+2026-02-15 08:00:04 INFO WindowsUpdateClient Scheduled check complete
+2026-02-15 09:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-15 09:00:02 WARNING WindowsUpdateClient Update catalog checksum mismatch detected
+2026-02-15 09:00:03 DEBUG WindowsUpdateClient Re-downloading update catalog
+2026-02-15 09:00:08 INFO WindowsUpdateClient Update catalog refreshed successfully
+2026-02-15 09:00:09 INFO WindowsUpdateClient No new updates available
+2026-02-15 09:00:10 INFO WindowsUpdateClient Scheduled check complete
+2026-02-15 10:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-15 10:00:02 INFO WindowsUpdateClient No new updates available
+2026-02-15 10:00:03 INFO WindowsUpdateClient Scheduled check complete
+2026-02-15 11:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-15 11:00:04 ERROR WindowsUpdateClient Update service error 0x8024A105: Agent is unable to connect to update service
+2026-02-15 11:00:05 WARNING WindowsUpdateClient Network connectivity issue suspected
+2026-02-15 11:00:06 DEBUG WindowsUpdateClient Running network diagnostics
+2026-02-15 11:00:15 INFO WindowsUpdateClient Network diagnostics: connection restored
+2026-02-15 11:00:20 INFO WindowsUpdateClient Retrying update service connection
+2026-02-15 11:00:25 INFO WindowsUpdateClient Connection to update service restored
+2026-02-15 11:00:26 INFO WindowsUpdateClient No new updates available
+2026-02-15 11:00:27 INFO WindowsUpdateClient Scheduled check complete
+2026-02-15 12:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-15 12:00:02 INFO WindowsUpdateClient No new updates available
+2026-02-15 12:00:03 INFO WindowsUpdateClient Scheduled check complete
+2026-02-15 13:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-15 13:00:05 INFO WindowsUpdateClient Checking for cumulative update packages
+2026-02-15 13:00:09 INFO WindowsUpdateClient No new cumulative update available
+2026-02-15 13:00:10 INFO WindowsUpdateClient Scheduled check complete
+2026-02-15 14:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-15 14:00:02 INFO WindowsUpdateClient No new updates available
+2026-02-15 14:00:03 INFO WindowsUpdateClient Scheduled check complete
+2026-02-15 15:00:00 INFO WindowsUpdateClient Scheduled check starting
+2026-02-15 15:00:04 DEBUG WindowsUpdateClient Telemetry report submitted to update service
+2026-02-15 15:00:05 INFO WindowsUpdateClient No new updates available
+2026-02-15 15:00:06 INFO WindowsUpdateClient Scheduled check complete

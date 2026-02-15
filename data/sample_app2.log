@@ -1,0 +1,144 @@
+2026-02-16 08:00:00 INFO SecurityCenterService Security Center service started
+2026-02-16 08:00:01 DEBUG SecurityCenterService Loading security provider registry entries
+2026-02-16 08:00:02 INFO SecurityCenterService Antivirus provider: Windows Defender registered
+2026-02-16 08:00:03 INFO SecurityCenterService Firewall provider: Windows Firewall registered
+2026-02-16 08:00:04 DEBUG SecurityCenterService Checking Windows Defender definition update status
+2026-02-16 08:00:05 INFO SecurityCenterService Antivirus definitions are current: version 1.403.12.0
+2026-02-16 08:00:06 INFO SecurityCenterService Firewall status: enabled and active
+2026-02-16 08:00:07 DEBUG SecurityCenterService User Account Control: enabled
+2026-02-16 08:00:08 INFO SecurityCenterService SmartScreen filter: enabled
+2026-02-16 08:00:09 INFO SecurityCenterService Security Center initialization complete
+2026-02-16 08:01:00 INFO SecurityCenterService Starting scheduled quick scan
+2026-02-16 08:01:01 DEBUG SecurityCenterService Scan target: C:\Users\Public
+2026-02-16 08:01:02 DEBUG SecurityCenterService Scan target: C:\Windows\Temp
+2026-02-16 08:01:03 DEBUG SecurityCenterService Scan target: running processes
+2026-02-16 08:05:45 INFO SecurityCenterService Quick scan completed: 0 threats found
+2026-02-16 08:05:46 DEBUG SecurityCenterService Scan duration: 4 minutes 43 seconds
+2026-02-16 08:05:47 INFO SecurityCenterService No action required after scan
+2026-02-16 09:00:00 INFO SecurityCenterService Checking definition update server
+2026-02-16 09:00:02 INFO SecurityCenterService Definitions are up to date
+2026-02-16 09:00:03 INFO SecurityCenterService Definition check complete
+2026-02-16 10:00:00 INFO SecurityCenterService Firewall rule audit starting
+2026-02-16 10:00:01 DEBUG SecurityCenterService Enumerating inbound rules: 42 found
+2026-02-16 10:00:02 DEBUG SecurityCenterService Enumerating outbound rules: 87 found
+2026-02-16 10:00:03 WARNING SecurityCenterService Firewall rule conflict detected: rule ID 1042 overlaps with rule ID 1109
+2026-02-16 10:00:04 DEBUG SecurityCenterService Rule ID 1042: Allow TCP 8080 from any source
+2026-02-16 10:00:05 DEBUG SecurityCenterService Rule ID 1109: Block TCP 8080 from private networks
+2026-02-16 10:00:06 WARNING SecurityCenterService Conflicting rules may cause unpredictable behavior on port 8080
+2026-02-16 10:00:07 INFO SecurityCenterService Flagging conflict for administrator review
+2026-02-16 10:00:08 INFO SecurityCenterService Firewall rule audit complete
+2026-02-16 11:00:00 INFO SecurityCenterService Checking for suspicious startup entries
+2026-02-16 11:00:02 DEBUG SecurityCenterService HKLM Run entries: 6 found
+2026-02-16 11:00:03 DEBUG SecurityCenterService HKCU Run entries: 4 found
+2026-02-16 11:00:04 INFO SecurityCenterService All startup entries match known-good registry
+2026-02-16 11:00:05 INFO SecurityCenterService Startup entry check complete
+2026-02-16 11:30:00 WARNING SecurityCenterService Suspicious process detected: unknown_proc.exe using high CPU
+2026-02-16 11:30:01 DEBUG SecurityCenterService Process hash: a3f9e1c7b2d08455f1a2e6b3d4c5f789
+2026-02-16 11:30:02 DEBUG SecurityCenterService Submitting hash to cloud reputation service
+2026-02-16 11:30:04 INFO SecurityCenterService Cloud reputation: hash not found in threat database
+2026-02-16 11:30:05 INFO SecurityCenterService Process flagged for monitoring
+2026-02-16 12:00:00 INFO SecurityCenterService Checking definition update server
+2026-02-16 12:00:01 INFO SecurityCenterService New definition available: version 1.403.14.0
+2026-02-16 12:00:02 INFO SecurityCenterService Downloading updated definitions
+2026-02-16 12:00:15 INFO SecurityCenterService Definition download complete
+2026-02-16 12:00:16 INFO SecurityCenterService Applying updated definitions
+2026-02-16 12:00:20 INFO SecurityCenterService Definitions updated to version 1.403.14.0
+2026-02-16 12:00:21 DEBUG SecurityCenterService Signature database reload triggered
+2026-02-16 12:00:23 INFO SecurityCenterService Signature database reloaded successfully
+2026-02-16 12:01:00 INFO SecurityCenterService Re-scanning monitored process with new definitions
+2026-02-16 12:01:02 INFO SecurityCenterService Monitored process scan: no threat detected
+2026-02-16 12:01:03 INFO SecurityCenterService Process removed from monitoring list
+2026-02-16 13:00:00 INFO SecurityCenterService Starting scheduled full system scan
+2026-02-16 13:00:01 DEBUG SecurityCenterService Full scan coverage: all local drives
+2026-02-16 13:10:22 WARNING SecurityCenterService Threat detected: Trojan:Win32/FakeAV in C:\Temp\setup_tool.exe
+2026-02-16 13:10:23 ERROR SecurityCenterService Unable to clean threat in active process
+2026-02-16 13:10:24 INFO SecurityCenterService Quarantining threat: C:\Temp\setup_tool.exe
+2026-02-16 13:10:25 INFO SecurityCenterService File quarantined successfully
+2026-02-16 13:10:26 DEBUG SecurityCenterService Quarantine path: C:\ProgramData\Windows Defender\Quarantine
+2026-02-16 13:10:27 INFO SecurityCenterService Threat event logged to Windows Event Log
+2026-02-16 13:10:28 INFO SecurityCenterService Notifying user of threat detection and quarantine action
+2026-02-16 13:25:44 INFO SecurityCenterService Full scan completed
+2026-02-16 13:25:45 DEBUG SecurityCenterService Scan statistics: 124532 files scanned, 1 threat found
+2026-02-16 13:25:46 INFO SecurityCenterService Full scan complete: 1 threat quarantined
+2026-02-16 14:00:00 INFO SecurityCenterService Checking definition update server
+2026-02-16 14:00:02 INFO SecurityCenterService Definitions are up to date
+2026-02-16 14:00:03 INFO SecurityCenterService Definition check complete
+2026-02-16 14:30:00 INFO SecurityCenterService User requested manual scan of Downloads folder
+2026-02-16 14:30:01 DEBUG SecurityCenterService Scan target: C:\Users\Default\Downloads
+2026-02-16 14:30:45 INFO SecurityCenterService Manual scan complete: 0 threats found
+2026-02-16 14:30:46 INFO SecurityCenterService Manual scan result reported to user
+2026-02-16 15:00:00 INFO SecurityCenterService Firewall log rotation starting
+2026-02-16 15:00:01 DEBUG SecurityCenterService Archiving firewall log: pfirewall_20260215.log
+2026-02-16 15:00:02 INFO SecurityCenterService Firewall log archived successfully
+2026-02-16 15:00:03 INFO SecurityCenterService New firewall log file created
+2026-02-16 15:30:00 WARNING SecurityCenterService Outbound connection blocked: 203.0.113.45:4444 from svchost.exe
+2026-02-16 15:30:01 DEBUG SecurityCenterService IP 203.0.113.45 checked against threat intelligence feed
+2026-02-16 15:30:02 ERROR SecurityCenterService IP 203.0.113.45 is on the known-malicious IP list
+2026-02-16 15:30:03 INFO SecurityCenterService Connection blocked and incident logged
+2026-02-16 15:30:04 INFO SecurityCenterService Administrator alert sent for suspicious outbound connection
+2026-02-16 16:00:00 INFO SecurityCenterService Checking definition update server
+2026-02-16 16:00:02 INFO SecurityCenterService Definitions are up to date
+2026-02-16 16:00:03 INFO SecurityCenterService Definition check complete
+2026-02-16 16:30:00 INFO SecurityCenterService UAC policy audit starting
+2026-02-16 16:30:01 DEBUG SecurityCenterService Current UAC level: 3 (notify for app changes only)
+2026-02-16 16:30:02 INFO SecurityCenterService UAC level meets security policy requirements
+2026-02-16 16:30:03 INFO SecurityCenterService UAC policy audit complete
+2026-02-16 17:00:00 INFO SecurityCenterService Windows Defender real-time protection: active
+2026-02-16 17:00:01 INFO SecurityCenterService PUA protection: enabled
+2026-02-16 17:00:02 INFO SecurityCenterService Network protection: enabled
+2026-02-16 17:00:03 INFO SecurityCenterService Exploit protection: enabled
+2026-02-16 17:00:04 DEBUG SecurityCenterService Attack surface reduction rules: 9 active
+2026-02-16 17:00:05 INFO SecurityCenterService Security feature audit complete: all features operational
+2026-02-16 17:30:00 WARNING SecurityCenterService BitLocker recovery key not backed up for drive C:
+2026-02-16 17:30:01 INFO SecurityCenterService Prompting user to back up BitLocker recovery key
+2026-02-16 18:00:00 INFO SecurityCenterService Checking definition update server
+2026-02-16 18:00:02 INFO SecurityCenterService Definitions are up to date
+2026-02-16 18:00:03 INFO SecurityCenterService Definition check complete
+2026-02-16 18:30:00 INFO SecurityCenterService SmartScreen application reputation check: outlook.exe passed
+2026-02-16 18:30:01 INFO SecurityCenterService SmartScreen application reputation check: chrome.exe passed
+2026-02-16 18:30:02 DEBUG SecurityCenterService SmartScreen cache: 142 entries
+2026-02-16 19:00:00 INFO SecurityCenterService Starting scheduled quick scan
+2026-02-16 19:00:02 DEBUG SecurityCenterService Scan target: recently downloaded files
+2026-02-16 19:00:03 DEBUG SecurityCenterService Scan target: running processes
+2026-02-16 19:02:18 INFO SecurityCenterService Quick scan completed: 0 threats found
+2026-02-16 19:02:19 INFO SecurityCenterService Scan complete
+2026-02-16 20:00:00 INFO SecurityCenterService Checking definition update server
+2026-02-16 20:00:01 INFO SecurityCenterService New definition available: version 1.403.16.0
+2026-02-16 20:00:02 INFO SecurityCenterService Downloading updated definitions
+2026-02-16 20:00:12 INFO SecurityCenterService Definitions updated to version 1.403.16.0
+2026-02-16 21:00:00 INFO SecurityCenterService Reviewing quarantine contents
+2026-02-16 21:00:01 DEBUG SecurityCenterService Quarantine item 1: Trojan:Win32/FakeAV (Feb 16 13:10)
+2026-02-16 21:00:02 DEBUG SecurityCenterService Quarantine retention policy: 30 days
+2026-02-16 21:00:03 INFO SecurityCenterService Quarantine review complete: 1 item retained
+2026-02-16 22:00:00 INFO SecurityCenterService Checking definition update server
+2026-02-16 22:00:02 INFO SecurityCenterService Definitions are up to date
+2026-02-16 22:00:03 INFO SecurityCenterService Definition check complete
+2026-02-16 23:00:00 INFO SecurityCenterService End-of-day security summary: 1 threat quarantined, 1 connection blocked
+2026-02-16 23:00:01 INFO SecurityCenterService Daily security report saved to event log
+2026-02-17 08:00:00 INFO SecurityCenterService Security Center service started after scheduled restart
+2026-02-17 08:00:01 INFO SecurityCenterService Definitions loaded: version 1.403.16.0
+2026-02-17 08:00:02 INFO SecurityCenterService All security providers operational
+2026-02-17 08:00:05 INFO SecurityCenterService Morning status check complete
+2026-02-17 08:30:00 INFO SecurityCenterService Starting scheduled quick scan
+2026-02-17 08:30:01 DEBUG SecurityCenterService Scan target: startup folders and registry run keys
+2026-02-17 08:30:02 DEBUG SecurityCenterService Scan target: running processes
+2026-02-17 08:31:55 INFO SecurityCenterService Quick scan completed: 0 threats found
+2026-02-17 09:00:00 INFO SecurityCenterService Firewall policy synchronization check
+2026-02-17 09:00:01 DEBUG SecurityCenterService Domain policy source: local (not domain-joined)
+2026-02-17 09:00:02 INFO SecurityCenterService Firewall policy is current
+2026-02-17 09:00:03 INFO SecurityCenterService Firewall policy check complete
+2026-02-17 09:30:00 WARNING SecurityCenterService Antispyware module reported delayed start
+2026-02-17 09:30:01 DEBUG SecurityCenterService Waiting for antispyware engine initialization
+2026-02-17 09:30:10 INFO SecurityCenterService Antispyware module online
+2026-02-17 09:30:11 INFO SecurityCenterService All modules operational
+2026-02-17 10:00:00 INFO SecurityCenterService Checking definition update server
+2026-02-17 10:00:02 INFO SecurityCenterService Definitions are up to date
+2026-02-17 10:00:03 INFO SecurityCenterService Definition check complete
+2026-02-17 10:30:00 INFO SecurityCenterService Controlled folder access event: blocked write to C:\Documents by unknown app
+2026-02-17 10:30:01 DEBUG SecurityCenterService Blocked app path: C:\Users\Default\AppData\Local\Temp\installer_v2.exe
+2026-02-17 10:30:02 INFO SecurityCenterService Controlled folder access block logged
+2026-02-17 10:30:03 INFO SecurityCenterService User notified of blocked access attempt
+2026-02-17 11:00:00 INFO SecurityCenterService Security posture report generated
+2026-02-17 11:00:01 DEBUG SecurityCenterService Posture: Antivirus OK, Firewall OK, Definitions current, UAC enabled
+2026-02-17 11:00:02 INFO SecurityCenterService Security posture: SECURE
+2026-02-17 11:00:03 INFO SecurityCenterService Security posture report complete
