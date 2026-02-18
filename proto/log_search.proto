@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package logsearch;
+
+// LogSearchService — agent-to-backend communication contract
+// for the Agentic Log Search Platform.
+//
+// NOTE: This contract is illustrative.  Full gRPC wiring is not implemented
+// in the current Flask application — the HTTP endpoints in app.py serve the
+// same semantic purpose.  The .proto is included to document the intended
+// service interface and to allow future gRPC integration without changing
+// the contract.  See DESIGN.md §4 for details.
+
+service LogSearchService {
+  // Search returns log entries matching the given free-text query.
+  rpc Search (SearchRequest) returns (SearchResponse);
+
+  // Ingest triggers log file parsing and indexing into the backend stores.
+  rpc Ingest (IngestRequest) returns (IngestResponse);
+}
+
+// ── Search messages ──────────────────────────────────────────────────────
+
+message SearchRequest {
+  string query       = 1;  // free-text query string
+  int32  max_results = 2;  // cap on results returned (default 50)
+}
+
+message LogEntry {
+  string timestamp   = 1;  // ISO-8601 timestamp string
+  string level       = 2;  // INFO | WARNING | ERROR | DEBUG
+  string module      = 3;  // source module name
+  string message     = 4;  // log message body
+  string source_file = 5;  // originating log file name
+}
+
+message SearchResponse {
+  repeated LogEntry entries  = 1;  // matching log entries
+  int32             count    = 2;  // total matches returned
+  string            backend  = 3;  // "elasticsearch" or "sqlite"
+  float             elapsed_ms = 4;
+}
+
+// ── Ingest messages ──────────────────────────────────────────────────────
+
+message IngestRequest {
+  // When empty, all available log files are ingested.
+  repeated string filenames = 1;
+}
+
+message IngestResponse {
+  string status  = 1;  // "ok" or "no_data"
+  int32  indexed = 2;  // number of records written
+}
